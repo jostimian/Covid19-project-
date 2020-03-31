@@ -14,11 +14,13 @@ def confirmed_wrld():
     df.to_excel('confirmed.xlsx')
     messagebox.showinfo('Saved','Saved In confirmed.xlsx')
 def ph():
+    message.showinfo("Warning","This Might Take A Min")
     location = covid19.getLocationByCountryCode("PH")
     df = fight_corona(location)
     df.to_excel('PH.xlsx')
     messagebox.showinfo('Saved','Saved in PH.xlsx')
 def find():
+    message.showinfo("Warning","This Might Take A Min")
     code = find_Entry.get()
     Find_Location = covid19.getLocationByCountryCode(code)
     df = fight_corona(Find_Location)
