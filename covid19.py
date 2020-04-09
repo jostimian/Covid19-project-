@@ -26,22 +26,20 @@ def find():
     df = fight_corona(Find_Location)
     df.to_excel(code + ".xlsx")
     messagebox.showinfo("Saved", "Saved in" + code +".xlsx")
-def changes():
-    changes = covid19.getLatestChanges()
-    df = fight_corona(changes)
-    df.to_excel("changes.xlsx")
 covid19 = COVID19Py.COVID19(data_source="jhu")
 root = Tk()
-root.geometry("500x500")
-root.title("CoronaVirus Locator")
+root.geometry("400x300")
+root.title("CoronaVirusLocator Version 1.3")
+
 confirmed_BTN = Button(text="confirmed cases death and recoveries of COVID19", command = confirmed_wrld)
 confirmed_BTN.pack()
+
 ph_BTN = Button(text = "Covid19 Cases in the PH",command = ph)
 ph_BTN.pack()
-changes_BTN = Button(text = "Changes")
-changes_BTN.pack()
+
 find_Entry = Entry()
 find_Entry.pack()
+
 find_btn = Button(text = "Search By Country Code eg.(PH)", command = find)
 find_btn.pack()
 root.mainloop()
