@@ -51,6 +51,8 @@ time.sleep(1)
 print("Connection Done")
 print("exiting CLI")
 print("Opening GUI")
+print("""The list is not updating real time each country should report new covid19 cases in JHU so they can update their database.
+But the list will be updated day by day <3""")
 root = Tk()
 messagebox.showinfo("Special Thanks","Special Thanks For The FrontLiners Out There Trying To Find Cure And Helping Serve Their Country And The World #BeatCovid19!")
 root.geometry("400x300")
