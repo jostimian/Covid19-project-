@@ -54,7 +54,7 @@ print("Opening GUI")
 root = Tk()
 messagebox.showinfo("Special Thanks","Special Thanks For The FrontLiners Out There Trying To Find Cure And Helping Serve Their Country And The World #BeatCovid19!")
 root.geometry("400x300")
-root.title("CoronaVirusLocator Version 1.3")
+root.title("CoronaVirusLocator Version 1.4")
 
 confirmedBtn = Button(text="confirmed cases death and recoveries of COVID19", command = confirmed_wrld)
 confirmedBtn.pack()
