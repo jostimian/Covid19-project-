@@ -65,7 +65,7 @@ phBtn = Button(text = "Covid19 Cases in the PH",command = ph)
 phBtn.pack()
 
 find_Entry = Entry()
-find_Entry.pa ck() 
+find_Entry.pack() 
 
 findBtn = Button(text = "Search By Country Code eg.(PH)", command = find)
 findBtn.pack()
